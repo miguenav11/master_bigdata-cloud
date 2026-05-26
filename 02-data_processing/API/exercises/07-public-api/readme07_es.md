@@ -88,7 +88,7 @@ OPENWEATHER_API_KEY = 'YOUR_API_KEY_HERE'
 
 Con tu clave real:
 ```python
-OPENWEATHER_API_KEY = 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6'
+OPENWEATHER_API_KEY = os.getenv('OPENWEATHER_API_KEY')
 ```
 
 ---
