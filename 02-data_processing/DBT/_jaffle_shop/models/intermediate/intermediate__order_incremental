@@ -1,0 +1,10 @@
+-- Modelo incremental
+{{ config(materialized='incremental') }}
+
+select * from "jaffle_shop"."raw"."orders"
+;
+
+{% if is_incremental() %}
+    -- Solo procesar datos nuevos
+    where ordered_at > (select max(ordered_at) from {{ this }})
+{% endif %}
