@@ -1,2 +1,2 @@
-# master_bigdata-cloud
-Notes and exercises. Python, SQL, Docker, Terraform, dbt, NoSQL, Apache Kafka, PySpark, API management, data ingestion, data visualization...
+# Module 3 - Cloud Infrastructure
+Notes and exercises. Terraform, GCP, AWS, Azure.
